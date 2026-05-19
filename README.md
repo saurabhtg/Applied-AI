@@ -159,9 +159,9 @@ python3 -m vol1_foundations.part04_prompts_as_code.eval_runner \
 To explore the examples:
 
 ```bash
-python -m vol1_foundations.part02_few_shot.examples.upi_fraud_classifier
-python -m vol1_foundations.part02_few_shot.examples.contract_review
-python -m vol1_foundations.part03_sycophancy.examples.medical_triage
+python3 -m vol1_foundations.part02_few_shot.examples.upi_fraud_classifier
+python3 -m vol1_foundations.part02_few_shot.examples.contract_review
+python3 -m vol1_foundations.part03_sycophancy.examples.medical_triage
 ```
  The examples make real model API calls; cost per run is typically under ₹5-10.
 

@@ -21,8 +21,8 @@
 ## Run
 
 ```bash
-python -m vol1_foundations.part02_few_shot.examples.upi_fraud_classifier
-python -m vol1_foundations.part02_few_shot.examples.contract_review
+python3 -m vol1_foundations.part02_few_shot.examples.upi_fraud_classifier
+python3 -m vol1_foundations.part02_few_shot.examples.contract_review
 ```
 
 ## When to use which

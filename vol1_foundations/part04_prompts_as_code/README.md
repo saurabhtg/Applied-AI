@@ -17,7 +17,7 @@
 From the repo root:
 
 ```bash
-python -m vol1_foundations.part04_prompts_as_code.eval_runner \
+python3 -m vol1_foundations.part04_prompts_as_code.eval_runner \
   vol1_foundations/part04_prompts_as_code/prompts/loan_rejection_explanation
 ```
 

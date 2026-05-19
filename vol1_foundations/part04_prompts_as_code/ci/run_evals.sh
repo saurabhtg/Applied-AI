@@ -45,7 +45,7 @@ for prompt_dir in "$PROMPTS_DIR"/*/; do
     fi
 
     echo "--- $prompt_name ---"
-    if python -m vol1_foundations.part04_prompts_as_code.eval_runner "$prompt_dir"; then
+    if python3 -m vol1_foundations.part04_prompts_as_code.eval_runner "$prompt_dir"; then
         echo "✓ $prompt_name passed"
     else
         echo "✗ $prompt_name FAILED"

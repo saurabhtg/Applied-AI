@@ -13,11 +13,11 @@ and unchanged cases.
 Two ways to use:
 
     # Compare against main branch
-    python ci/compare_versions.py prompts/loan_rejection_explanation/scores.json \\
+    python3 ci/compare_versions.py prompts/loan_rejection_explanation/scores.json \\
                                   origin/main:prompts/loan_rejection_explanation/scores.json
 
     # Compare two arbitrary files
-    python ci/compare_versions.py path/to/v10_scores.json path/to/v11_scores.json
+    python3 ci/compare_versions.py path/to/v10_scores.json path/to/v11_scores.json
 
 Exit codes:
     0 — no regressions

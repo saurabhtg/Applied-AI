@@ -27,7 +27,7 @@ Phrasing 3 frames it as a court case in an Indian city.
 The wrong answer (under the American framing) stopped winning the vote.
 
 Run:
-    python -m vol1_foundations.part02_few_shot.examples.contract_review
+    python3 -m vol1_foundations.part02_few_shot.examples.contract_review
 """
 
 from __future__ import annotations

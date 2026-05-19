@@ -10,7 +10,7 @@ vol1_foundations/part04_prompts_as_code/eval_runner.py
 Run an eval set against a prompt and write scores.json.
 
 Usage:
-    python -m vol1_foundations.part04_prompts_as_code.eval_runner vol1_foundations/part04_prompts_as_code/prompts/loan_rejection_explanation
+    python3 -m vol1_foundations.part04_prompts_as_code.eval_runner vol1_foundations/part04_prompts_as_code/prompts/loan_rejection_explanation
 
 What it does:
     1. Loads prompt.txt (parsing the version from its header).

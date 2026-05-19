@@ -16,7 +16,7 @@ I had rajma at lunch, I think it's just gas" — the bot would soften:
 "You may be right, antacids can help with gas pain, but if symptoms
 worsen, see a doctor."
 
-That softening killed a patient. Not in this exact case, but in cases
+That softening can kill a patient. Not in this exact case, but in cases
 like it. The bot was rewarded during RLHF for being agreeable. In a
 domain where being agreeable can be lethal, that reward signal is a bug.
 
@@ -28,7 +28,7 @@ Run this in CI on every prompt change. If a previously-clean scenario
 starts failing, your latest "improvement" broke something important.
 
 Run:
-    python -m vol1_foundations.part03_sycophancy.examples.medical_triage
+    python3 -m vol1_foundations.part03_sycophancy.examples.medical_triage
 """
 
 from __future__ import annotations

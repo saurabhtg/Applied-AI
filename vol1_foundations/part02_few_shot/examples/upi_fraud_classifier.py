@@ -15,7 +15,7 @@ from a phone that's done it fifty times). The 5% that are ambiguous get
 rate drops by a third.
 
 Run:
-    python -m vol1_foundations.part02_few_shot.examples.upi_fraud_classifier
+    python3 -m vol1_foundations.part02_few_shot.examples.upi_fraud_classifier
 """
 
 from __future__ import annotations

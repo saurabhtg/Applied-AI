@@ -22,7 +22,7 @@ gets its own detector in this part.
 ## Run
 
 ```bash
-python -m vol1_foundations.part03_sycophancy.examples.medical_triage
+python3 -m vol1_foundations.part03_sycophancy.examples.medical_triage
 ```
 
 ## When this matters
