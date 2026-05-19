@@ -15,9 +15,9 @@ filename, so PRs show real word-level diffs in Git.
 
 Example file format:
 
-    # version: 3.7
-    # updated: 2026-05-12
-    # author: priya.menon@company.com
+    # version: 1.0
+    # updated: 2026-05-19
+    # author: saurabhg@thinknbuild.co.in
     # owner: lending-platform-team
     # eval_pass_threshold: 0.85
 
