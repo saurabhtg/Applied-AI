@@ -1,0 +1,175 @@
+# Applied-AI Series - Think and Build with SaurabhG
+#
+# MIT License
+#
+# Copyright (c) 2026 Saurabh Gupta
+
+# =============================================================================
+# .gitignore for applied-ai
+# =============================================================================
+#
+# A note on what's NOT here:
+#
+#  scores.json    — these get committed alongside prompt.txt and eval.jsonl.
+#                   The whole point of Part 4 is that prompt + eval + scores
+#                   are one versioned artifact reviewed together. Ignoring
+#                   scores.json defeats the discipline.
+#
+#  eval.jsonl     — committed for the same reason.
+#
+#  prompt.txt     — obviously committed.
+#
+# If you want to ignore a *local* override of any of these, use a per-file
+# .gitignore exception in the prompt directory, not a blanket pattern here.
+# =============================================================================
+ 
+ 
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+ 
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+ 
+# PyInstaller
+*.manifest
+*.spec
+ 
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+ 
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+ 
+# mypy / type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+ 
+# pyenv / poetry / pipenv (lockfiles often DO get committed — keep them
+# unless your team has decided otherwise)
+#.python-version
+#Pipfile.lock
+#poetry.lock
+ 
+ 
+# -----------------------------------------------------------------------------
+# Virtual environments
+# -----------------------------------------------------------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+ 
+ 
+# -----------------------------------------------------------------------------
+# Secrets and credentials
+# -----------------------------------------------------------------------------
+# Never commit API keys. Local .env files for ANTHROPIC_API_KEY etc.
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.yml
+secrets.yaml
+credentials.json
+ 
+# AWS / GCP / Azure local creds
+.aws/
+.gcp/
+.azure/
+ 
+ 
+# -----------------------------------------------------------------------------
+# Editors and IDEs
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+ 
+ 
+# -----------------------------------------------------------------------------
+# Jupyter / notebooks
+# -----------------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+profile_default/
+ipython_config.py
+ 
+ 
+# -----------------------------------------------------------------------------
+# Applied-AI-specific runtime artifacts
+# -----------------------------------------------------------------------------
+# Checkpoint store used by Part 20's CheckpointStore. Workflow state is
+# runtime data — not source.
+.checkpoints/
+*.checkpoint
+ 
+# Cache directories that some examples might create locally
+.cache/
+.semantic_cache/
+ 
+# Local trace exports (if someone configures OTel to write to disk)
+traces/
+*.trace
+ 
+# Generated documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+site/
+ 
+# Local experiment outputs — anything a contributor writes while
+# tinkering that shouldn't be part of the canonical repo
+scratch/
+tmp/
+out/
+output/
+*.log
