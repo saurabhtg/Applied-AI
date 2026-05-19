@@ -1,7 +1,7 @@
 # applied-ai
 
-> Companion code for the **[Applied AI](https://www.linkedin.com/pulse/master-index-applied-practical-ai-saurabh-gupta-f8htc/)** course by [Saurabh Gupta](https://www.linkedin.com/in/saurabhg1207).
-> *Thirty parts. Six volumes. For engineers who want to scale-up themselves.*
+Companion code for the **[Applied AI](https://www.linkedin.com/pulse/master-index-applied-practical-ai-saurabh-gupta-f8htc/)** course by [Saurabh Gupta](https://www.linkedin.com/in/saurabhg1207).
+ *Thirty parts. Six volumes. For engineers who want to scale-up themselves.*
 
 ---
 
