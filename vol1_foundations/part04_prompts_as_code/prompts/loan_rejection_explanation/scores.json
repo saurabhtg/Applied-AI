@@ -1,14 +1,14 @@
 {
   "prompt_name": "loan_rejection_explanation",
   "prompt_version": "1.0",
-  "model": "claude-sonet-4-6",
+  "model": "claude-sonnet-4-6",
   "model_settings": {
     "temperature": 0.3,
     "max_tokens": 400
   },
   "evaluator": {
     "method": "llm_judge",
-    "judge_model": "claude-sonet-4-6",
+    "judge_model": "claude-sonnet-4-6",
     "human_review_sample": "10%"
   },
   "eval_run_id": "run_20260519_142301",
