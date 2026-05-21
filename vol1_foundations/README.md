@@ -15,7 +15,7 @@ sleep through the night with.
 | 2 | The Power of the Good Example | **Built** | [`part02_few_shot/`](./part02_few_shot/) |
 | 3 | The 'Yes-Man' Bug — Sycophancy | **Built** | [`part03_sycophancy/`](./part03_sycophancy/) |
 | 4 | Prompts are Production Code | **Built** | [`part04_prompts_as_code/`](./part04_prompts_as_code/) |
-| 5 | The JSON Straitjacket | Coming | — |
+| 5 | The JSON Straitjacket | **Built**  | [`part05_structured_outputs/`](./part05_structured_outputs/) |
 | 6 | The Architect's Safety Net — Regression Harness | Article-level; eval runner lives in Part 4 | — |
 
 ## How the parts hang together
