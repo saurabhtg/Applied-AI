@@ -43,7 +43,7 @@ Open the volume's README first. It tells you the arc — what each part contribu
 | 3 | The 'Yes-Man' Bug — Sycophancy | Built N Runnable | [`vol1_foundations/part03_sycophancy/`](./vol1_foundations/part03_sycophancy/) |
 | 4 | Prompts are Production Code | Built N Runnable | [`vol1_foundations/part04_prompts_as_code/`](./vol1_foundations/part04_prompts_as_code/) |
 | 5 | The JSON Straitjacket | Built N Runnable | [`vol1_foundations/part05_structured_outputs/`](./vol1_foundations/part05_structured_outputs/) |
-| 6 | The Architect's Safety Net — Regression Harness | Coming + Part 4 wiring | — |
+| 6 | The Architect's Safety Net — Regression Harness | Built N Runnable + Part 4 wiring | [`vol1_foundations/part06_regression_harness/`](./vol1_foundations/part06_regression_harness/) |
 
 ### Volume II — Plumbing
 
@@ -114,8 +114,10 @@ applied-ai/
 │   └── part04_prompts_as_code/            # prompt_loader, eval_runner
 │   |   ├── prompts/                       # versioned prompt artifacts
 │   |   └── ci/                            # run_evals.sh, compare_versions.py
-│.  └── part05_structured_outputs          # extractor, schema and structured client
-│       └── examples/                      # patient_intake
+│   ├── part05_structured_outputs/         # extractor, schema and structured client
+│   │   └── examples/                      # patient_intake
+│   └── part06_regression_harness/         # harness, score_history, regression_report
+│       └── examples/                      # loan_rejection_baseline
 │       
 ├── requirements.txt
 └── README.md

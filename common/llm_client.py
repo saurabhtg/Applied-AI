@@ -58,6 +58,8 @@ class LLMResponse:
     output_tokens: int
     latency_ms: float
     stop_reason: str | None = None
+    cache_creation_tokens: int = 0
+    cache_read_tokens: int = 0
     raw: Any = field(default=None, repr=False)
 
 
@@ -136,7 +138,15 @@ class LLMClient:
                 kwargs["temperature"] = temperature
                 
             if system:
-                kwargs["system"] = system
+                # Cache the system prompt — it is stable per prompt version and
+                # is the highest-value prefix to cache (renders before messages).
+                kwargs["system"] = [
+                    {
+                        "type": "text",
+                        "text": system,
+                        "cache_control": {"type": "ephemeral"},
+                    }
+                ]
             if stop_sequences:
                 kwargs["stop_sequences"] = stop_sequences
 
@@ -148,17 +158,25 @@ class LLMClient:
                 block.text for block in response.content if block.type == "text"
             )
 
+            cache_creation_tokens = getattr(response.usage, "cache_creation_input_tokens", 0) or 0
+            cache_read_tokens = getattr(response.usage, "cache_read_input_tokens", 0) or 0
+
             current_span.set_attribute("llm.input_tokens", response.usage.input_tokens)
             current_span.set_attribute("llm.output_tokens", response.usage.output_tokens)
+            current_span.set_attribute("llm.cache_creation_tokens", cache_creation_tokens)
+            current_span.set_attribute("llm.cache_read_tokens", cache_read_tokens)
             current_span.set_attribute("llm.latency_ms", latency_ms)
 
             logger.info(
-                "llm_call prompt=%s version=%s model=%s in_tokens=%d out_tokens=%d latency_ms=%.1f",
+                "llm_call prompt=%s version=%s model=%s in_tokens=%d out_tokens=%d "
+                "cache_create=%d cache_read=%d latency_ms=%.1f",
                 prompt_name or "unknown",
                 prompt_version or "unversioned",
                 model,
                 response.usage.input_tokens,
                 response.usage.output_tokens,
+                cache_creation_tokens,
+                cache_read_tokens,
                 latency_ms,
             )
 
@@ -170,6 +188,8 @@ class LLMClient:
                 output_tokens=response.usage.output_tokens,
                 latency_ms=latency_ms,
                 stop_reason=response.stop_reason,
+                cache_creation_tokens=cache_creation_tokens,
+                cache_read_tokens=cache_read_tokens,
                 raw=response,
             )
 
