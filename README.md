@@ -20,7 +20,7 @@ No hand-waving. No "here's the idea, figure out the rest." Real code, real evals
 | Volume | Theme | Folder |
 |--------|-------|--------|
 | I | The Mental Model (Foundations) | [`vol1_foundations/`](./vol1_foundations/) |
-| II | The Plumbing (Tools & RAG) | *coming* |
+| II | The Plumbing (Tools & RAG) | [`vol2_plumbing/`](./vol2_plumbing/) |
 | III | The Nervous System (Agents) | *coming* |
 | IV | The Multi-Agent Committee | *coming* |
 | V | The Jury (Evals & Safety) | *coming* |
@@ -49,7 +49,7 @@ Open the volume's README first. It tells you the arc — what each part contribu
 
 | # | Title | Status | Folder |
 |---|-------|--------|--------|
-| 7 | Giving the Machine a Wrench — Function Calling | Work-in-Progress | — |
+| 7 | Giving the Machine a Wrench — Function Calling | Built N Runnable | [`vol2_plumbing/part07_function_calling/`](./vol2_plumbing/part07_function_calling/) |
 | 8 | The Multitasking Trap — Parallel Tool Calls | Work-in-Progress | — |
 | 9 | RAG is a Search Problem | Work-in-Progress | — |
 | 10 | Measuring the Truth — RAGAS | Work-in-Progress | — |
@@ -118,6 +118,10 @@ applied-ai/
 │   │   └── examples/                      # patient_intake
 │   └── part06_regression_harness/         # harness, score_history, regression_report
 │       └── examples/                      # loan_rejection_baseline
+│
+├── vol2_plumbing/
+│   ├── part07_function_calling/           # ToolCaller, ToolDefinition, agentic loop
+│       └── examples/                      # upi_assistant (UPI status/limit/history)
 │       
 ├── requirements.txt
 └── README.md
