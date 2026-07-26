@@ -50,10 +50,10 @@ Open the volume's README first. It tells you the arc — what each part contribu
 | # | Title | Status | Folder |
 |---|-------|--------|--------|
 | 7 | Giving the Machine a Wrench — Function Calling | Built N Runnable | [`vol2_plumbing/part07_function_calling/`](./vol2_plumbing/part07_function_calling/) |
-| 8 | The Multitasking Trap — Parallel Tool Calls | Work-in-Progress | — |
-| 9 | RAG is a Search Problem | Work-in-Progress | — |
-| 10 | Measuring the Truth — RAGAS | Work-in-Progress | — |
-| 11 | Thanks for the (Semantic) Memory — Caching | Work-in-Progress | — |
+| 8 | The Multitasking Trap — Parallel Tool Calls | Built N Runnable | [`vol2_plumbing/part08_parallel_tool_calls/`](./vol2_plumbing/part08_parallel_tool_calls/) |
+| 9 | RAG is a Search Problem | Built N Runnable | [`vol2_plumbing/part09_rag_retrieval/`](./vol2_plumbing/part09_rag_retrieval/) |
+| 10 | Measuring the Truth — RAGAS | Built N Runnable | [`vol2_plumbing/part10_ragas/`](./vol2_plumbing/part10_ragas/) |
+| 11 | Thanks for the (Semantic) Memory — Caching | Built N Runnable | [`vol2_plumbing/part11_semantic_cache/`](./vol2_plumbing/part11_semantic_cache/) |
 
 ### Volume III — Agents
 
@@ -121,7 +121,13 @@ applied-ai/
 │
 ├── vol2_plumbing/
 │   ├── part07_function_calling/           # ToolCaller, ToolDefinition, agentic loop
-│       └── examples/                      # upi_assistant (UPI status/limit/history)
+│   │   └── examples/                      # upi_assistant (UPI status/limit/history)
+│   ├── part08_parallel_tool_calls/        # ParallelToolRunner, concurrent execution
+│   │   └── examples/                      # loan_verifier (CIBIL+ITR+EMI in parallel)
+│   ├── part09_rag_retrieval/              # HybridRetriever (BM25 + dense), reranker
+│   │   └── examples/kyc_rag/             # KYC compliance Q&A over RBI/PMLA corpus
+│   ├── part10_ragas/                      # RAGAS metrics: faithfulness, relevance, recall
+│   └── part11_semantic_cache/             # SemanticCache, cosine-sim hit detection
 │       
 ├── requirements.txt
 └── README.md

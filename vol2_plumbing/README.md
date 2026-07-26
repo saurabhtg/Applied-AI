@@ -8,10 +8,10 @@
 | Part | Title | Status | Folder |
 |------|-------|--------|--------|
 | 7 | Giving the Machine a Wrench — Function Calling | **Built** | [`part07_function_calling/`](./part07_function_calling/) |
-| 8 | The Multitasking Trap — Parallel Tool Calls | **Coming** | |
-| 9 | RAG is a Search Problem | **Coming** | |
-| 10 | Measuring the Truth — RAGAS | **Coming** | |
-| 11 | Thanks for the (Semantic) Memory — Caching | **Coming** | |
+| 8 | The Multitasking Trap — Parallel Tool Calls | **Built** | [`part08_parallel_tool_calls/`](./part08_parallel_tool_calls/)|
+| 9 | RAG is a Search Problem | **Built** | [`part09_rag_retrieval/`](./part09_rag_retrieval/)|
+| 10 | Measuring the Truth — RAGAS | **Built** | [`part10_ragas/`](./part10_ragas/)|
+| 11 | Thanks for the (Semantic) Memory — Caching | **Built** | [`part11_semantic_cache/`](./part11_semantic_cache/)|
 
 ## How the parts hang together
 
