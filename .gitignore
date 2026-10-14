@@ -35,6 +35,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 article.md
+diagrams/
 build/
 develop-eggs/
 dist/

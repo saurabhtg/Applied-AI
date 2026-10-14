@@ -21,7 +21,7 @@ No hand-waving. No "here's the idea, figure out the rest." Real code, real evals
 |--------|-------|--------|
 | I | The Mental Model (Foundations) | [`vol1_foundations/`](./vol1_foundations/) |
 | II | The Plumbing (Tools & RAG) | [`vol2_plumbing/`](./vol2_plumbing/) |
-| III | The Nervous System (Agents) | *coming* |
+| III | The Nervous System (Agents) | [`vol3_agents/`](./vol3_agents/) |
 | IV | The Multi-Agent Committee | *coming* |
 | V | The Jury (Evals & Safety) | *coming* |
 | VI | The Monday Morning Pager (Production) | *coming* |
@@ -59,10 +59,10 @@ Open the volume's README first. It tells you the arc — what each part contribu
 
 | # | Title | Status | Folder |
 |---|-------|--------|--------|
-| 12 | Observe, Think, Act | TBD | — |
-| 13 | The Plan vs. The Reality — ReAct Patterns | TBD | — |
-| 14 | The Token Accountant — Working Memory | TBD | — |
-| 15 | The Socratic Agent — Reflexion | TBD | — |
+| 12 | Observe, Think, Act | Built N Runnable | [`vol3_agents/part12_observe_think_act`](./vol3_agents/part12_observe_think_act/) |
+| 13 | The Plan vs. The Reality — ReAct Patterns | Built N Runnable | [`vol3_agents/part13_react_patterns`](./vol3_agents/part13_react_patterns/) |
+| 14 | The Token Accountant — Working Memory | Built N Runnable | [`vol3_agents/part14_working_memory`](./vol3_agents/part14_working_memory/) |
+| 15 | The Socratic Agent — Reflexion | Built N Runnable | [`vol3_agents/part15_reflexion`](./vol3_agents/part15_reflexion/) |
 
 ### Volume IV — Multi-Agent
 
@@ -106,6 +106,7 @@ applied-ai/
 │   ├── llm_client.py                      # thin wrapper, logs prompt version on every call
 │   └── tracing.py                         # OpenTelemetry spans, graceful no-op
 │
+│
 ├── vol1_foundations/
 │   ├── part02_few_shot/                   # few_shot, self_consistency, prompt_voting
 │   │   └── examples/                      # upi_fraud_classifier, contract_review
@@ -119,6 +120,7 @@ applied-ai/
 │   └── part06_regression_harness/         # harness, score_history, regression_report
 │       └── examples/                      # loan_rejection_baseline
 │
+│
 ├── vol2_plumbing/
 │   ├── part07_function_calling/           # ToolCaller, ToolDefinition, agentic loop
 │   │   └── examples/                      # upi_assistant (UPI status/limit/history)
@@ -129,6 +131,16 @@ applied-ai/
 │   ├── part10_ragas/                      # RAGAS metrics: faithfulness, relevance, recall
 │   └── part11_semantic_cache/             # SemanticCache, cosine-sim hit detection
 │       
+│
+├── vol3_agents/
+│   ├── part12_observe_think_act/          # Article-only: the OTA mental model
+│   ├── part13_react_patterns/             # ReActAgent: bounded loop, errors-as-observations
+│   │   └── examples/                      # delivery_tracker (Meesho shipment + return)
+│   ├── part14_working_memory/             # WorkingMemory: token budget, pinning, compaction
+│   │   └── examples/                      # customer_support (Jio Fiber multi-turn session)
+│   └── part15_reflexion/                  # ReflexionAgent: evaluate → reflect → retry
+│       └── examples/                      # complaint_resolver (Boult Audio D2C returns)
+│
 ├── requirements.txt
 └── README.md
 ```
